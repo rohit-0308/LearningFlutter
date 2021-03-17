@@ -22,6 +22,13 @@ class HomePage extends StatelessWidget {
               onTap: () {
                 Navigator.pop(context);
               },
+            ),
+            ListTile(
+              title: Text("Login"),
+              onTap: () {
+                Navigator.pushNamed(context, '/login');
+                // Navigator.pop(context);
+              },
             )
           ],
         ),
