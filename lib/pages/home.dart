@@ -1,38 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app_learning/widgets/drawer.dart';
 
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: Drawer(
-        child: ListView(
-          children: [
-            DrawerHeader(
-              child: Text(
-                "Settings",
-                style: TextStyle(
-                  fontSize: 40,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.amberAccent,
-                ),
-              ),
-            ),
-            ListTile(
-              title: Text("Home"),
-              onTap: () {
-                Navigator.pop(context);
-              },
-            ),
-            ListTile(
-              title: Text("Login"),
-              onTap: () {
-                Navigator.pushNamed(context, '/login');
-                // Navigator.pop(context);
-              },
-            )
-          ],
-        ),
-      ),
+      drawer: MyDrawer(),
       appBar: AppBar(
         title: Text("Home Page"),
       ),
