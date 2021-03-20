@@ -2,8 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class MyDrawer extends StatelessWidget {
-  final imageUrl =
-      "https://www.google.com/imgres?imgurl=https%3A%2F%2Fimg.favpng.com%2F3%2F3%2F25%2Fcomputer-icons-user-material-design-business-login-png-favpng-XtCyNJTCfVkwab47dcf7ErQuX.jpg&imgrefurl=https%3A%2F%2Ffavpng.com%2Fpng_view%2Fdizzy-user-material-design-business-login-png%2F2ZKS07Ak&tbnid=0oV-x7qCYkp1iM&vet=12ahUKEwihmJ-j57zvAhWEXn0KHXRMDpEQMygnegUIARCXAg..i&docid=J7_n02zAgassBM&w=820&h=819&q=account%20avatar&ved=2ahUKEwihmJ-j57zvAhWEXn0KHXRMDpEQMygnegUIARCXAg";
+  final imageUrl = "";
   @override
   Widget build(BuildContext context) {
     return Drawer(
