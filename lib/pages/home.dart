@@ -10,12 +10,13 @@ class HomePage extends StatelessWidget {
         title: Text("Home Page"),
       ),
       body: Center(
-          child: ElevatedButton(
-        child: Text('Login Page'),
-        onPressed: () => {
-          Navigator.pushNamed(context, '/login'),
-        },
-      )),
+        child: ElevatedButton(
+          child: Text('Login Page'),
+          onPressed: () => {
+            Navigator.pushNamed(context, '/login'),
+          },
+        ),
+      ),
     );
   }
 }
