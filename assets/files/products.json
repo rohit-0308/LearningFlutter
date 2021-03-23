@@ -1,0 +1,68 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "iPhone 12 Pro Max",
+      "desc": "Apple iPhone 12th Generation",
+      "price": 120000,
+      "color": "#35505A",
+      "image": ""
+    },
+    {
+      "id": 2,
+      "name": "iPhone 12 Pro Max",
+      "desc": "Apple iPhone 12th Generation",
+      "price": 120000,
+      "color": "#35505A",
+      "image": ""
+    },
+    {
+      "id": 3,
+      "name": "iPhone 12 Pro Max",
+      "desc": "Apple iPhone 12th Generation",
+      "price": 120000,
+      "color": "#35505A",
+      "image": ""
+    },
+    {
+      "id": 4,
+      "name": "iPhone 12 Pro Max",
+      "desc": "Apple iPhone 12th Generation",
+      "price": 120000,
+      "color": "#35505A",
+      "image": ""
+    },
+    {
+      "id": 5,
+      "name": "iPhone 12 Pro Max",
+      "desc": "Apple iPhone 12th Generation",
+      "price": 120000,
+      "color": "#35505A",
+      "image": ""
+    },
+    {
+      "id": 6,
+      "name": "iPhone 12 Pro Max",
+      "desc": "Apple iPhone 12th Generation",
+      "price": 120000,
+      "color": "#35505A",
+      "image": ""
+    },
+    {
+      "id": 6,
+      "name": "iPhone 12 Pro Max",
+      "desc": "Apple iPhone 12th Generation",
+      "price": 120000,
+      "color": "#35505A",
+      "image": ""
+    },
+    {
+      "id": 6,
+      "name": "iPhone 12 Pro Max",
+      "desc": "Apple iPhone 12th Generation",
+      "price": 120000,
+      "color": "#35505A",
+      "image": ""
+    }
+  ]
+}
