@@ -13,7 +13,7 @@ class ProductWidget extends StatelessWidget {
     return Card(
       child: ListTile(
         onTap: () {},
-        leading: Image.network(item.image),
+        leading: Image.asset(item.image),
         title: Text(item.name),
         subtitle: Text(item.desc),
         trailing: Text(

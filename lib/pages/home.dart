@@ -44,13 +44,50 @@ class _HomePageState extends State<HomePage> {
         body: Padding(
           padding: EdgeInsets.all(16.0),
           child: (CatalogModel.items != null && CatalogModel.items.isNotEmpty)
-              ? ListView.builder(
-                  itemCount: CatalogModel.items.length,
+              ? GridView.builder(
+                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                    crossAxisCount: 2,
+                    crossAxisSpacing: 10,
+                    mainAxisSpacing: 16,
+                  ),
                   itemBuilder: (context, index) {
-                    return ProductWidget(
-                      item: CatalogModel.items[index],
+                    final item = CatalogModel.items[index];
+                    return Card(
+                      clipBehavior: Clip.antiAlias,
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(15)),
+                      child: GridTile(
+                        header: Container(
+                          padding: const EdgeInsets.all(12),
+                          decoration: BoxDecoration(
+                            color: Colors.deepPurple,
+                          ),
+                          child: Text(
+                            item.name,
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
+                        child: Image.asset(
+                          item.image,
+                        ),
+                        footer: Container(
+                          padding: const EdgeInsets.all(12),
+                          decoration: BoxDecoration(
+                            color: Colors.black,
+                          ),
+                          child: Text(
+                            item.price.toString(),
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
+                      ),
                     );
                   },
+                  itemCount: CatalogModel.items.length,
                 )
               : Center(
                   child: CircularProgressIndicator(),
